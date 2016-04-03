@@ -11,8 +11,6 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN ee stack install --web
 
 
-
-
 # Source EasyEngien Autocompletion
 CMD "source /etc/bash_completion.d/ee_auto.rc"
 

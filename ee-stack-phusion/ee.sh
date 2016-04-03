@@ -1,2 +1,2 @@
 #!/bin/bash
-ee stack start
+/usr/local/bin/ee stack start
