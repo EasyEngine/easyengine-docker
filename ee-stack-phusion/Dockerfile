@@ -6,7 +6,7 @@ MAINTAINER Rahul Bansal <rahul.bansal@rtcamp.com>
 CMD ["/sbin/my_init"]
 
 # Add Volumes for data
-VOLUME  ["/var/www", "/var/lib/mysql"]
+VOLUME  ["/var/www", "/var/lib/mysql","/var/log"]
 
 # Add Volumes for config
 VOLUME  ["/etc/nginx","/etc/php","/etc/mysql", "/etc/postfix","/etc/ee"]
