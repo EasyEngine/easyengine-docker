@@ -5,12 +5,6 @@ MAINTAINER Rahul Bansal <rahul.bansal@rtcamp.com>
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
-# Add Volumes for data
-VOLUME  ["/var/www", "/var/lib/mysql","/var/log"]
-
-# Add Volumes for config
-VOLUME  ["/etc/nginx","/etc/php","/etc/mysql", "/etc/postfix","/etc/ee"]
-
 # Install Web Stack using EasyEngine
 RUN LC_ALL=en_US.UTF-8 ee stack install --web
 
